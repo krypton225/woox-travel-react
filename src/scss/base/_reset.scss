@@ -17,7 +17,26 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    height: 20000px;
+    height: 2000px;
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    border-radius: 4.5rem;
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: map-get($colors, "dark-green");
+}
+
+body::-webkit-scrollbar-track-piece {
+    display: none;
 }
 
 a {
