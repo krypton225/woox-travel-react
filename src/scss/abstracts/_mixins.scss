@@ -86,6 +86,12 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin reset-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @mixin fade($type) {
     @if $type == "hide" {
         visibility: hidden;

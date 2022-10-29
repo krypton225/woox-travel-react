@@ -1,10 +1,17 @@
 .navbar {
-    position: relative;
-    padding: calc-padding-20();
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: calc(calc-padding-20() / 4);
     box-shadow: -0.2rem 0.2rem 2rem -0.8rem rgb(51 51 51 / 91%);
     -webkit-box-shadow: -0.2rem 0.2rem 2rem -0.8rem rgb(51 51 51 / 91%);
     -moz-box-shadow: -0.2rem 0.2rem 2rem -0.8rem rgb(51 51 51 / 91%);
     background-color: map-get($colors, "medium-green");
+
+    @include breakpoint(tablet) {
+        padding: calc-padding-20() 0;
+    }
 
     .row {
         @include flex-between-row;
@@ -132,8 +139,8 @@
 
             span:last-child {
                 -webkit-transform: translateY(-0.5rem) rotate(-135deg);
-                -ms-transform: translateY(-0.5rem) rotate(-135deg);
-                transform: translateY(-0.5rem) rotate(-135deg);
+                -ms-transform: translateY(-0.6rem) rotate(-135deg);
+                transform: translateY(-0.6rem) rotate(-135deg);
                 -webkit-transition-delay: 0.3s;
                 -o-transition-delay: 0.3s;
                 transition-delay: 0.3s;

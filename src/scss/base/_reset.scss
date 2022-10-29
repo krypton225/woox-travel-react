@@ -10,8 +10,14 @@ html {
     scroll-behavior: smooth;
 }
 
+::selection {
+    background-color: map-get($colors, "dark-green");
+    color: white;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    height: 20000px;
 }
 
 a {

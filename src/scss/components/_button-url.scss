@@ -1,0 +1,17 @@
+.btn-url {
+    width: 15rem;
+    height: 5.5rem;
+    @include flex-center-row;
+    border-radius: 5rem;
+    border: 0.2rem solid map-get($colors, "dark-green");
+    color: map-get($colors, "dark-green");
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    @include transition-ease-in(all);
+
+    &:hover {
+        background-color: map-get($colors, "dark-green");
+        color: white;
+    }
+}
