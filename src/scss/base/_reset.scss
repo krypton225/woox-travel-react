@@ -28,3 +28,9 @@ img {
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+a,
+svg,
+.tap-light-remove {
+    -webkit-tap-highlight-color: transparent !important;
+}
