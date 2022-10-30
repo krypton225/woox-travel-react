@@ -5,6 +5,7 @@ $light-green: #82dbd8;
 $darker-green: #005555;
 $dark-green: #2f8f9d;
 $dark-black-green: #062c30;
+$native-dark: #232223;
 
 // * Add all colors to $colors map.
 $colors: (
@@ -14,4 +15,5 @@ $colors: (
     "darker-green": $darker-green,
     "dark-green": $dark-green,
     "dark-black-green": $dark-black-green,
+    "native-dark": $native-dark,
 );

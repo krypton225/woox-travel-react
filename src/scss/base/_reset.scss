@@ -18,11 +18,11 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     height: 2000px;
-    overflow: overlay;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0;
     border-radius: 4.5rem;
     background-color: transparent !important;
 }
