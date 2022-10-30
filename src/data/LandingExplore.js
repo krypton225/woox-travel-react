@@ -1,16 +1,21 @@
+import { faUser, faGlobe, faHouse } from '@fortawesome/free-solid-svg-icons'
+
 const LandingExplore = [
     {
-        iconName: "faUser",
+        id: 1,
+        iconName: faUser,
         itemTitle: "population",
         itemNumber: "8.66 m"
     },
     {
-        iconName: "faGlobe",
+        id: 2,
+        iconName: faGlobe,
         itemTitle: "territory",
         itemNumber: "513.120 km2"
     },
     {
-        iconName: "faHouse",
+        id: 3,
+        iconName: faHouse,
         itemTitle: "AVG price",
         itemNumber: "$946.000"
     },
