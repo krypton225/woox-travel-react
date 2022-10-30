@@ -10,6 +10,17 @@
     font-size: 1.5rem;
     @include transition-ease-in(all);
 
+    @include breakpoint(tablet) {
+        width: 13rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+
+    &.second {
+        color: white;
+        background-color: map-get($colors, "dark-green");
+    }
+
     &:hover {
         background-color: map-get($colors, "dark-green");
         color: white;
