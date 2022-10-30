@@ -62,10 +62,6 @@ const VisitCountry = () => {
                                     </p>
                                 }
                             </div>
-
-                            {
-                                country.id % 2 === 0 ? <div className='custom-line'></div> : ''
-                            }
                         </div>
                     ))
                 }
