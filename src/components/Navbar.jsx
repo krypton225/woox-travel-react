@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import NavItems from "../data/NavItems";
 
 const Navbar = () => {
@@ -13,17 +14,15 @@ const Navbar = () => {
         <nav className="navbar" id="navbar">
             <div className="container">
                 <div className="row">
-                    <a className="navbar__logo" href="/">
+                    <Link className="navbar__logo" to="/">
                         <img src="./assets/images/logo.png" alt="Woox Logo" />
-                    </a>
+                    </Link>
 
                     <ul className={`navbar__list ${toggler ? "active" : ""}`}>
                         {
                             NavItems.map((item) => (
                                 <li key={item.id} className="navbar__list__item">
-                                    <a href="/">
-                                        {item.itemName}
-                                    </a>
+                                    <Link to={item.itemURL}>{item.itemName}</Link>
                                 </li>
                             ))
                         }
