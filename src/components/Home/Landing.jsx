@@ -4,6 +4,7 @@ import Button from '../Global/Button'
 import LandingExplore from '../../data/LandingExplore'
 import Visit from './Visit'
 import FirstFooter from '../Global/FirstFooter'
+import SecondFooter from '../Global/SecondFooter'
 
 const Landing = () => {
     return (
@@ -40,6 +41,8 @@ const Landing = () => {
             <Visit />
 
             <FirstFooter />
+
+            <SecondFooter />
         </>
     )
 }
