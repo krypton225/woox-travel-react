@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../Global/Button'
 import LandingExplore from '../../data/LandingExplore'
 import Visit from './Visit'
+import FirstFooter from '../Global/FirstFooter'
 
 const Landing = () => {
     return (
@@ -37,6 +38,8 @@ const Landing = () => {
             </div>
 
             <Visit />
+
+            <FirstFooter />
         </>
     )
 }

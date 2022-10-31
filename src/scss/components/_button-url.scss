@@ -26,6 +26,22 @@
         }
     }
 
+    &.third {
+        height: 4.5rem;
+        border: 0.2rem solid white !important;
+        color: white;
+        background-color: transparent;
+
+        @include breakpoint(tablet) {
+            width: 16rem;
+        }
+
+        &:hover {
+            background-color: white !important;
+            color: map-get($colors, "dark-green");
+        }
+    }
+
     &.btn-card {
         width: 12rem;
         height: 4rem;
