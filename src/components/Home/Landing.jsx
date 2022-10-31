@@ -16,7 +16,7 @@ const Landing = () => {
 
                         <h3 className='landing__title'>Switzerland</h3>
 
-                        <Button urlValue="/about" valueText="go there" second={false} btnCard={false} />
+                        <Button urlValue={"/about"} valueText="go there" second={false} btnCard={false} />
 
                         <div className="landing__explore">
 
