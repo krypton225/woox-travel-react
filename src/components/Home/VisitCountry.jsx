@@ -21,7 +21,7 @@ const VisitCountry = () => {
                                         <span className='visit__countries__left__card__info__top__text__region-2'>{country.secondRegion}</span>
                                     </div>
 
-                                    <Button urlValue={'/about'} valueText={'explore more'} second={true} btnCard={true} />
+                                    <Button urlValue={'/about'} valueText={'explore more'} second={true} btnCard={true} thirdType={false} fourthType={false} />
                                 </div>
 
                                 <p className='visit__countries__left__card__info__desc'>{country.cardDesc}</p>

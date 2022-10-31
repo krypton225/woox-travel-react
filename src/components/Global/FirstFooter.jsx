@@ -15,7 +15,7 @@ const FirstFooter = () => {
                     </div>
 
                     <div className="first-footer__btn">
-                        <Button urlValue={"/about"} valueText="book yours now" className="btn-url" second={true} btnCard={false} thirdType={true} />
+                        <Button urlValue={"/about"} valueText="book yours now" className="btn-url" second={true} btnCard={false} thirdType={true} fourthType={false} />
                     </div>
                 </div>
             </div>

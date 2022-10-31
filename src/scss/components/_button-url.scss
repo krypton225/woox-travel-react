@@ -42,6 +42,17 @@
         }
     }
 
+    &.fourth {
+        height: 4.5rem;
+        background-color: white;
+        color: map-get($colors, "medium-green");
+
+        &:hover {
+            color: map-get($colors, "medium-green") !important;
+            background-color: white !important;
+        }
+    }
+
     &.btn-card {
         width: 12rem;
         height: 4rem;

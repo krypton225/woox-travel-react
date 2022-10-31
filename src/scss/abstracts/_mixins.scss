@@ -186,3 +186,11 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
+
+@mixin hero-pic($path-bg-img) {
+    width: 100%;
+    height: 100vh;
+    @include reset-bg;
+    background-image: url($path-bg-img);
+    background-attachment: fixed;
+}
