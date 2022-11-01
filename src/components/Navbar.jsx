@@ -10,6 +10,15 @@ const Navbar = () => {
         setToggler(!toggler);
     }
 
+    const goToTopOfPage = () => {
+        window.scrollTo(0, 0);
+    }
+
+    const closingNavItemAfterCLick = () => {
+        setToggler(false);
+        goToTopOfPage();
+    }
+
     return (
         <nav className="navbar" id="navbar">
             <div className="container">
@@ -22,7 +31,7 @@ const Navbar = () => {
                         {
                             NavItems.map((item) => (
                                 <li key={item.id} className="navbar__list__item">
-                                    <Link to={item.itemURL}>{item.itemName}</Link>
+                                    <Link to={item.itemURL} onClick={closingNavItemAfterCLick}>{item.itemName}</Link>
                                 </li>
                             ))
                         }
