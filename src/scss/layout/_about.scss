@@ -68,4 +68,42 @@
             font-size: 1.44rem;
         }
     }
+
+    &__first-slider {
+        border-radius: 2rem;
+        padding: 3rem;
+        background-color: white;
+        box-shadow: 3px 9px 15px -9px rgba(0, 0, 0, 0.69);
+        -webkit-box-shadow: 3px 9px 15px -9px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 3px 9px 15px -9px rgba(0, 0, 0, 0.69);
+
+        &__title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: capitalize;
+
+            @include breakpoint(mobile) {
+                font-size: 2rem;
+            }
+
+            span {
+                color: map-get($colors, "medium-green");
+            }
+        }
+
+        .city-slider {
+            margin-top: 4rem;
+        }
+
+        .styles-module_item-container__a8zaY {
+            & > div {
+                border-radius: 3rem;
+                @include flex-center-row;
+
+                img {
+                    border-radius: 3rem;
+                }
+            }
+        }
+    }
 }

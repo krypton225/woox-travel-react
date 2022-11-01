@@ -10,7 +10,7 @@ const SecondFooter = () => {
             </p>
 
             <p className="second-footer__design-source">
-                Main design in <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>
+                Main design in <a href="https://templatemo.com" rel="noreferrer" target="_blank" title="free CSS templates">TemplateMo</a>
             </p>
         </footer>
     )
