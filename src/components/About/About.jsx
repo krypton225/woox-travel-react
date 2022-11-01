@@ -1,4 +1,5 @@
 import AboutGlass from './AboutGlass'
+import DiscoverAbout from './DiscoverAbout'
 import FirstCitiesSwiper from './FirstCitiesSwiper'
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
         <section className='about' id='about'>
             <AboutGlass />
             <FirstCitiesSwiper />
+            <DiscoverAbout />
         </section>
     )
 }
