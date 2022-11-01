@@ -1,8 +1,8 @@
+import MainCountingIDGenerator, { insertIDIntoData } from "./MainCountingID";
 import { faUser, faGlobe, faHouse, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const VisitDataCountry = [
     {
-        id: 1,
         cardImage: "./assets/images/country/country-01.jpg",
         firstRegion: "switzerland",
         secondRegion: "europe",
@@ -26,7 +26,6 @@ const VisitDataCountry = [
         }
     },
     {
-        id: 2,
         cardImage: "./assets/images/country/country-02.jpg",
         firstRegion: "caribbean",
         secondRegion: "north america",
@@ -50,7 +49,6 @@ const VisitDataCountry = [
         }
     },
     {
-        id: 3,
         cardImage: "./assets/images/country/country-03.jpg",
         firstRegion: "germany",
         secondRegion: "europe",
@@ -74,5 +72,9 @@ const VisitDataCountry = [
         }
     },
 ];
+
+(() => {
+    insertIDIntoData(MainCountingIDGenerator, VisitDataCountry);
+})();
 
 export default VisitDataCountry;
