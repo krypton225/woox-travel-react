@@ -1,5 +1,5 @@
 .first-footer {
-    widows: 100vw;
+    width: 100vw;
     @include flex-center-row;
     background-image: url("../../../public/assets/images/cta-bg.jpg");
     @include reset-bg;
