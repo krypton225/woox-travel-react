@@ -13,8 +13,8 @@ const Landing = () => {
             <div className='landing' id='landing'>
                 <div className="container">
                     <div className="row">
-                        <EnterSection secName="landing" firstSentence="Take a Glimpse Into The Beautiful Country Of:"
-                            titleSec="Switzerland" btnURL="/about" valueTextBtn="go there" />
+                        <EnterSection secName="landing" firstSentence="take a glimpse into the beautiful country of:"
+                            titleSec="switzerland" btnURL="/about" valueTextBtn="go there" />
 
                         <div className="landing__explore">
 

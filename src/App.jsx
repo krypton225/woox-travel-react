@@ -2,6 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import About from "./components/About/About";
+import Deals from "./components/Deals/Deals";
 import Landing from "./components/Home/Landing";
 import Navbar from "./components/Navbar";
 
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="about" element={<About />} />
+        <Route path="deals" element={<Deals />} />
       </Routes>
       {/* <Loading /> */}
     </div>
