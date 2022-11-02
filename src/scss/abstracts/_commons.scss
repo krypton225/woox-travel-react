@@ -35,3 +35,23 @@ section {
     height: 0.2rem !important;
     background-color: #afafaf;
 }
+
+.enter-section {
+    @include flex-around-column;
+}
+
+.enter-sec-text {
+    font-size: 2.1rem;
+    color: white;
+
+    @include breakpoint(tablet) {
+        font-size: 1.6rem;
+    }
+}
+
+.enter-sec-title {
+    margin-block: 2.2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}

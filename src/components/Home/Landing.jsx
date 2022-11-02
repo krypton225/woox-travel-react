@@ -5,6 +5,7 @@ import LandingExplore from '../../data/LandingExplore'
 import Visit from './Visit'
 import FirstFooter from '../Global/FirstFooter'
 import SecondFooter from '../Global/SecondFooter'
+import EnterSection from '../Global/EnterSection'
 
 const Landing = () => {
     return (
@@ -12,11 +13,8 @@ const Landing = () => {
             <div className='landing' id='landing'>
                 <div className="container">
                     <div className="row">
-                        <p className='landing__text'>Take a Glimpse Into The Beautiful Country Of:</p>
-
-                        <h3 className='landing__title'>Switzerland</h3>
-
-                        <Button urlValue={"/about"} valueText="go there" second={false} btnCard={false} thirdType={false} fourthType={false} />
+                        <EnterSection secName="landing" firstSentence="Take a Glimpse Into The Beautiful Country Of:"
+                            titleSec="Switzerland" btnURL="/about" valueTextBtn="go there" />
 
                         <div className="landing__explore">
 

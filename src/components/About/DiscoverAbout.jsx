@@ -8,7 +8,7 @@ const DiscoverAbout = () => {
             <div className="container">
                 <div className="row">
                     <div className="about__discover__img">
-                        <img src="./assets/images/about/about-left-image.jpg" alt="About Discover Image" draggable={false} />
+                        <img src="./assets/images/about/about-left-image.jpg" alt="About Discover" draggable={false} />
                     </div>
 
                     <div className="about__discover__info">

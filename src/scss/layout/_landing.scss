@@ -9,22 +9,6 @@
         @include flex-center-column;
     }
 
-    &__text {
-        font-size: 2.1rem;
-        color: white;
-
-        @include breakpoint(tablet) {
-            font-size: 1.6rem;
-        }
-    }
-
-    &__title {
-        margin-block: 2.2rem;
-        font-size: 3rem;
-        font-weight: 600;
-        color: white;
-    }
-
     &__explore {
         width: 80%;
         padding: 2rem;
