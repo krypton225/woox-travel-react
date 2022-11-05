@@ -7,36 +7,36 @@ const CardOffer = () => {
     return (
         <>
             {
-                DealsWeeklyBestOfferData.map((offer) => (
-                    <div className="deals__offers__cards__container__card" key={offer.id}>
+                DealsWeeklyBestOfferData.map(({ id, offerCardImage, offerDurationText, cityName, durationInDays, durationInPlaces, offerDescription }) => (
+                    <div className="deals__offers__cards__container__card" key={id}>
                         <div className="deals__offers__cards__container__card__img">
-                            <img src={offer.offerCardImage} alt="Just A Card" />
+                            <img src={offerCardImage} alt="Just A Card" />
                         </div>
 
                         <div className="deals__offers__cards__container__card__info">
                             {
                                 <>
-                                    <p className='deals__offers__cards__container__card__info__duration'>* {offer.offerDurationText}</p>
+                                    <p className='deals__offers__cards__container__card__info__duration'>* {offerDurationText}</p>
 
-                                    <p className='deals__offers__cards__container__card__info__city'>{offer.cityName}</p>
+                                    <p className='deals__offers__cards__container__card__info__city'>{cityName}</p>
 
                                     <hr />
 
                                     <div className="deals__offers__cards__container__card__info__inner">
                                         <div className="deals__offers__cards__container__card__info__inner__part">
-                                            <span><FontAwesomeIcon icon={offer.durationInDays.icon} /></span>
-                                            <span>{offer.durationInDays.text}</span>
+                                            <span><FontAwesomeIcon icon={durationInDays.icon} /></span>
+                                            <span>{durationInDays.text}</span>
                                         </div>
 
                                         <div className="deals__offers__cards__container__card__info__inner__part">
-                                            <span><FontAwesomeIcon icon={offer.durationInPlaces.icon} /></span>
-                                            <span>{offer.durationInPlaces.text}</span>
+                                            <span><FontAwesomeIcon icon={durationInPlaces.icon} /></span>
+                                            <span>{durationInPlaces.text}</span>
                                         </div>
                                     </div>
 
                                     <hr />
 
-                                    <p className='deals__offers__cards__container__card__info__desc'>{offer.offerDescription}</p>
+                                    <p className='deals__offers__cards__container__card__info__desc'>{offerDescription}</p>
 
                                     <Button urlValue={"/about"} valueText="reserve" className="btn-url" second={false} btnCard={false} thirdType={false} fourthType={true} />
                                 </>

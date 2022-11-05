@@ -19,12 +19,12 @@ const Landing = () => {
                         <div className="landing__explore">
 
                             {
-                                LandingExplore.map((ex) => (
-                                    <div className="landing__explore__item" key={ex.id}>
-                                        <FontAwesomeIcon icon={ex.iconName} />
+                                LandingExplore.map(({ id, iconName, itemTitle, itemNumber }) => (
+                                    <div className="landing__explore__item" key={id}>
+                                        <FontAwesomeIcon icon={iconName} />
                                         <div className="landing__explore__item__info">
-                                            <span className="landing__explore__item__title">{ex.itemTitle}</span>
-                                            <span className="landing__explore__item__number">{ex.itemNumber}</span>
+                                            <span className="landing__explore__item__title">{itemTitle}</span>
+                                            <span className="landing__explore__item__number">{itemNumber}</span>
                                         </div>
                                     </div>
                                 ))

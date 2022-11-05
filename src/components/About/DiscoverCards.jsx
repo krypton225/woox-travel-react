@@ -4,10 +4,10 @@ const DiscoverCards = () => {
     return (
         <>
             {
-                DiscoverCardsData.map((card) => (
-                    <div className="about__discover__info__cards__one" key={card.id}>
-                        <p className='about__discover__info__cards-number'>{card.discoverCardNum}</p>
-                        <span>{card.discoverCardDesc}</span>
+                DiscoverCardsData.map(({ id, discoverCardNum, discoverCardDesc }) => (
+                    <div className="about__discover__info__cards__one" key={id}>
+                        <p className='about__discover__info__cards-number'>{discoverCardNum}</p>
+                        <span>{discoverCardDesc}</span>
                     </div>
                 ))
             }

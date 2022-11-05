@@ -29,9 +29,9 @@ const Navbar = () => {
 
                     <ul className={`navbar__list ${toggler ? "active" : ""}`}>
                         {
-                            NavItems.map((item) => (
-                                <li key={item.id} className="navbar__list__item">
-                                    <Link to={item.itemURL} onClick={closingNavItemAfterCLick}>{item.itemName}</Link>
+                            NavItems.map(({ id, itemName, itemURL }) => (
+                                <li key={id} className="navbar__list__item">
+                                    <Link to={itemURL} onClick={closingNavItemAfterCLick}>{itemName}</Link>
                                 </li>
                             ))
                         }

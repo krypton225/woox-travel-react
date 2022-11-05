@@ -16,7 +16,6 @@ const Visit = () => {
 
                     <div className="visit__countries">
                         <VisitCountry />
-
                         <VisitMap />
                     </div>
                 </div>

@@ -11,16 +11,16 @@ const SearchDeals = () => {
 
                 <select name="destinations-countries" id="destinations-countries">
                     {
-                        DealsDestinationsData.map((destData) => (
-                            <option key={destData.id} value={destData.countryName}>{destData.countryName}</option>
+                        DealsDestinationsData.map(({ id, countryName }) => (
+                            <option key={id} value={countryName}>{countryName}</option>
                         ))
                     }
                 </select>
 
                 <select name="destinations-prices" id="destinations-prices">
                     {
-                        DealsPricesData.map((pricesData) => (
-                            <option key={pricesData.id} value={pricesData.priceValue}>{pricesData.priceShowing}</option>
+                        DealsPricesData.map(({ id, priceValue, priceShowing }) => (
+                            <option key={id} value={priceValue}>{priceShowing}</option>
                         ))
                     }
                 </select>
