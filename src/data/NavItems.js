@@ -16,11 +16,7 @@ const NavItems = [
     {
         itemName: "reservation",
         itemURL: "/reservation",
-    },
-    {
-        itemName: "book yours",
-        itemURL: "/book-yours",
-    },
+    }
 ];
 
 
