@@ -24,7 +24,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="row">
                     <Link className="navbar__logo" to="/">
-                        <img src="./assets/images/logo.png" alt="Woox Logo" />
+                        <img src="./assets/images/logo.png" alt="Woox Logo" onClick={closingNavItemAfterCLick} />
                     </Link>
 
                     <ul className={`navbar__list ${toggler ? "active" : ""}`}>
