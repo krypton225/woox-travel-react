@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Deals from "./components/Deals/Deals";
 import Landing from "./components/Home/Landing";
 import Navbar from "./components/Navbar";
+import Reservation from "./components/Reservation/Reservation";
 
 import "./scss/main.scss"
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path="about" element={<About />} />
         <Route path="deals" element={<Deals />} />
+        <Route path="reservation" element={<Reservation />} />
       </Routes>
       {/* <Loading /> */}
     </div>
