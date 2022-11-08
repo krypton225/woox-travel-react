@@ -157,6 +157,22 @@
                     font-size: 1.7rem;
                     caret-color: map-get($colors, "medium-green");
 
+                    &::-webkit-input-placeholder {
+                        text-transform: capitalize;
+                    }
+
+                    &::-moz-placeholder {
+                        text-transform: capitalize;
+                    }
+
+                    &:-ms-input-placeholder {
+                        text-transform: capitalize;
+                    }
+
+                    &::-ms-input-placeholder {
+                        text-transform: capitalize;
+                    }
+
                     &::placeholder {
                         text-transform: capitalize;
                     }
