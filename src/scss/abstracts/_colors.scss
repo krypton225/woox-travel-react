@@ -6,8 +6,10 @@ $darker-green: #005555;
 $dark-green: #2f8f9d;
 $dark-black-green: #062c30;
 $native-dark: #232223;
+$semi-native-dark: #2a2a2a;
 $semi-white-color: #afafaf;
 $semi-dark: #575757;
+$whiter-color: #898989;
 
 // * Add all colors to $colors map.
 $colors: (
@@ -18,6 +20,8 @@ $colors: (
     "dark-green": $dark-green,
     "dark-black-green": $dark-black-green,
     "native-dark": $native-dark,
+    "semi-native-dark": $semi-native-dark,
     "semi-white-color": $semi-white-color,
     "semi-dark": $semi-dark,
+    "whiter-color": $whiter-color,
 );

@@ -92,7 +92,7 @@
             }
 
             &__title {
-                color: #2a2a2a;
+                color: map-get($colors, "semi-native-dark");
                 text-transform: capitalize;
                 font-size: 3.1rem;
                 font-weight: 600;
@@ -189,7 +189,7 @@
 
                             &__part {
                                 font-size: 1.4rem;
-                                color: #898989;
+                                color: map-get($colors, "whiter-color");
 
                                 @include breakpoint(tablet) {
                                     font-size: 1.2rem;
@@ -205,7 +205,7 @@
                             width: 85%;
                             font-size: 1.3rem;
                             text-align: start;
-                            color: #898989;
+                            color: map-get($colors, "whiter-color");
                         }
                     }
                 }
