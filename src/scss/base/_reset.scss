@@ -10,6 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
+::-moz-selection {
+    background-color: map-get($colors, "dark-green");
+    color: white;
+}
+
 ::selection {
     background-color: map-get($colors, "dark-green");
     color: white;
@@ -17,7 +22,6 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    // height: 2000px;
     overflow-x: hidden;
 }
 
