@@ -179,11 +179,17 @@
 }
 
 @mixin animation-left-right($duration) {
+    -webkit-animation-name: move-left-right;
     animation-name: move-left-right;
+    -webkit-animation-duration: $duration;
     animation-duration: $duration;
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
     animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
     animation-play-state: running;
 }
 
