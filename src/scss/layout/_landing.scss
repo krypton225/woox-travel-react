@@ -20,8 +20,7 @@
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         background-color: white;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        @include grid-columns(4);
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -30,7 +29,7 @@
             width: 100%;
             padding: 1rem;
             border-radius: 2rem;
-            grid-template-columns: repeat(2, 1fr);
+            @include grid-columns(2);
             justify-items: center;
             -ms-flex-line-pack: center;
             align-content: center;

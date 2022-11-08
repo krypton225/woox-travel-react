@@ -58,15 +58,14 @@
 
             &__card {
                 margin-block: 3rem;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                @include grid-columns(2);
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center;
                 gap: 1.2rem;
 
                 @include breakpoint(tablet) {
-                    grid-template-columns: repeat(1, 1fr);
+                    @include grid-columns(1);
                 }
 
                 &__img {

@@ -109,6 +109,16 @@
     flex-direction: column;
 }
 
+@mixin grid-columns($columns-number) {
+    display: grid;
+    grid-template-columns: repeat($columns-number, 1fr);
+}
+
+@mixin grid-center() {
+    display: grid;
+    place-items: center;
+}
+
 @mixin hero-img {
     position: absolute;
     top: 50%;
