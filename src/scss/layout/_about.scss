@@ -14,6 +14,7 @@
         border-radius: 2rem;
         @include hero-img;
         @include flex-center-column;
+        -webkit-backdrop-filter: blur(1rem);
         backdrop-filter: blur(1rem);
         background-color: rgba(0, 0, 0, 0.2);
         color: white;
@@ -140,6 +141,7 @@
 
         &__info {
             width: 100%;
+            -ms-flex-item-align: start;
             align-self: flex-start;
 
             &__title {
@@ -160,6 +162,7 @@
             &__cards {
                 width: 100%;
                 @include flex-between-row;
+                -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 gap: 2rem;
 
@@ -168,6 +171,7 @@
                 }
 
                 & > div {
+                    -ms-flex-preferred-size: 47%;
                     flex-basis: 47%;
                     padding: 2rem;
                     margin-block: 1.5rem;
@@ -176,6 +180,7 @@
 
                     @include breakpoint(tablet) {
                         width: 100%;
+                        -ms-flex-preferred-size: 70%;
                         flex-basis: 70%;
                     }
                 }
