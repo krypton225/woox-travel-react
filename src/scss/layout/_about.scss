@@ -154,7 +154,7 @@
             &__desc,
             &__explain {
                 margin-block: 2rem;
-                color: #afafaf;
+                color: map-get($colors, "semi-white-color");
                 font-size: 1.4rem;
                 line-height: 1.8;
             }

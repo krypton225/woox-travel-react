@@ -27,7 +27,7 @@ section {
 .custom-line {
     width: 100% !important;
     height: 0.2rem !important;
-    background-color: #afafaf;
+    background-color: map-get($colors, "semi-white-color");
 }
 
 .enter-section {
