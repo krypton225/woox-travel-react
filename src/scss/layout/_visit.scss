@@ -10,7 +10,7 @@
             font-size: 3rem;
             font-weight: 600;
             text-transform: capitalize;
-            color: #575757;
+            color: map-get($colors, "semi-dark");
 
             @include breakpoint(large) {
                 text-align: center;
@@ -100,7 +100,7 @@
                             @include flex-start-column;
 
                             &__region-1 {
-                                color: #575757;
+                                color: map-get($colors, "semi-dark");
                                 font-size: 2.2rem;
                                 font-weight: 600;
                                 text-transform: capitalize;
